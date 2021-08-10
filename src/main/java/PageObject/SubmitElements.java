@@ -16,3 +16,4 @@ public class SubmitElements {
     boxName= $(".table-responsive")
 
 }
+
