@@ -5,7 +5,6 @@ import com.codeborne.selenide.selector.ByText;
 
 public class MainPageElements {
 
-
     public  SelenideElement
      formsElement = $(new ByText("Forms"));
 

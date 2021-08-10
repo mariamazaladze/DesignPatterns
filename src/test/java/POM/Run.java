@@ -16,7 +16,7 @@ public class Run extends ChromeAndWeb {
     MainPageMethods main = new MainPageMethods();
     LeftPannelMethods left = new LeftPannelMethods();
     StudentRegistrationMethods registration = new StudentRegistrationMethods();
-    SubmitMethods afterSubmit= new SubmitMethods();
+    SubmitMethods afterSubmit = new SubmitMethods();
     Variables variables = new Variables();
 
     @Test
@@ -32,10 +32,6 @@ public class Run extends ChromeAndWeb {
                 .setSubmit();
         afterSubmit.checkTitile()
                 .checkValues();
-
-
-
-
 
 
     }
