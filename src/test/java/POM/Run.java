@@ -7,6 +7,7 @@ import Steps.SubmitMethods;
 import Utils.ChromeAndWeb;
 
 
+import Variables.Variables;
 import org.testng.annotations.Test;
 
 public class Run extends ChromeAndWeb {
@@ -16,22 +17,23 @@ public class Run extends ChromeAndWeb {
     LeftPannelMethods left = new LeftPannelMethods();
     StudentRegistrationMethods registration = new StudentRegistrationMethods();
     SubmitMethods afterSubmit= new SubmitMethods();
+    Variables variables = new Variables();
 
     @Test
     public void m() throws InterruptedException {
         open.openchrome();
-
         main.formClick();
         left.LeftPannelClick();
-
-        registration.setName("mariam")
-                .setLastname("azaladze")
-                .setMob("0123456789")
+        registration.setName(variables.name)
+                .setLastname(variables.lastname)
+                .setMob(variables.mobnumber)
                 .setGender()
                 .scroll()
                 .setSubmit();
         afterSubmit.checkTitile();
-        Thread.sleep(5000);
+
+
+
 
 
 
