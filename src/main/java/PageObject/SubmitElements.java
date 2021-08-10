@@ -1,5 +1,6 @@
 package PageObject;
 
+import Variables.Variables;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
 import com.codeborne.selenide.SelenideElement;
@@ -12,14 +13,13 @@ import java.util.List;
 import static com.codeborne.selenide.Selenide.$;
 
 public class SubmitElements {
+    Variables v=new Variables();
     public WebDriver driver;
 
     public SelenideElement
-            boxTitle = $(new ByText("Thanks for submitting the form"));
-
-
-
-    //public WebElement boxName = driver.findElement(By.xpath("//*[@class='modal-content']//tbody/tr[1]/td[2]"));
+            boxTitle = $(new ByText("Thanks for submitting the form")),
+            vv= $(new ByText("mariam azaladze"));
+    
 
 }
 

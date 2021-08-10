@@ -1,9 +1,11 @@
 package Steps;
 import PageObject.SubmitElements;
+import Variables.Variables;
 import org.testng.Assert;
 
 public class SubmitMethods {
     SubmitElements submit=new SubmitElements();
+    Variables cvladebi=new Variables();
 
     public SubmitMethods checkTitile(){
 
@@ -12,10 +14,10 @@ public class SubmitMethods {
         Assert.assertEquals(submit.boxTitle.getText(),"Thanks for submitting the form");
         return this;
     }
-//    public SubmitMethods checkValues( ){
-//        submit.boxName.getText();
-//        System.out.println(submit.boxName.getText());
-//        Assert.assertEquals(submit.boxName.getText(),"mariam azaladze");
-//                return this;
-//    }
+    public SubmitMethods checkValues( ){
+        submit.vv.getText();
+        System.out.println(submit.vv.getText());
+        Assert.assertEquals(submit.vv.getText(),cvladebi.name+" "+cvladebi.lastname);
+                return this;
+    }
 }

@@ -30,7 +30,8 @@ public class Run extends ChromeAndWeb {
                 .setGender()
                 .scroll()
                 .setSubmit();
-        afterSubmit.checkTitile();
+        afterSubmit.checkTitile()
+                .checkValues();
 
 
 
