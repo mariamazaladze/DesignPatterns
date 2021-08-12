@@ -2,9 +2,21 @@ package Variables;
 
 public class Variables {
 
-    public String name = "mariam";
-    public String lastname= "azaladze";
-    public String mobnumber= "0123456789";
+    private String name = "mariam";
+    private String lastname = "azaladze";
+    private String mobnumber = "0123456789";
 
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getLastname() {
+        return this.lastname;
+    }
+
+    public String getMobnumber() {
+        return this.mobnumber;
+    }
 
 }

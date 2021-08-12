@@ -2,6 +2,7 @@ package PageObject;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
+import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selenide.*;
 

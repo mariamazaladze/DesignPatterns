@@ -5,12 +5,10 @@ import Steps.MainPageMethods;
 import Steps.StudentRegistrationMethods;
 import Steps.SubmitMethods;
 import Utils.ChromeAndWeb;
-
-
 import Variables.Variables;
 import org.testng.annotations.Test;
 
-public class Run extends ChromeAndWeb {
+public class PomTests {
 
     ChromeAndWeb open = new ChromeAndWeb();
     MainPageMethods main = new MainPageMethods();
@@ -20,13 +18,13 @@ public class Run extends ChromeAndWeb {
     Variables variables = new Variables();
 
     @Test
-    public void m() throws InterruptedException {
+    public void testFierst() {
         open.openchrome();
         main.formClick();
         left.LeftPannelClick();
-        registration.setName(variables.name)
-                .setLastname(variables.lastname)
-                .setMob(variables.mobnumber)
+        registration.setName(variables.getName())
+                .setLastname(variables.getLastname())
+                .setMob(variables.getMobnumber())
                 .setGender()
                 .scroll()
                 .setSubmit();

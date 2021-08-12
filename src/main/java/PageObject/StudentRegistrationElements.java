@@ -12,7 +12,6 @@ public class StudentRegistrationElements {
             lastNameElement = $("#lastName"),
             mobElement = $("#userNumber"),
             genderElement = $(".custom-control-label", 1),
-
-    submit = $("#submit");
+            submit = $("#submit");
 
 }

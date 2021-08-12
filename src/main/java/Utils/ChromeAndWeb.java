@@ -9,6 +9,7 @@ public class ChromeAndWeb {
         startMaximized = true;
         open("https://demoqa.com/");
 
+
     }
 
 
