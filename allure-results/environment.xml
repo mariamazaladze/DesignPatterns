@@ -15,5 +15,18 @@
     <id>123</id>
     <name>test pack</name>
 
+        <parameter>
+            <key>Browser</key>
+            <value>Chrome</value>
+        </parameter>
+        <parameter>
+            <key>Browser.Version</key>
+            <value>92.0</value>
+        </parameter>
+        <parameter>
+            <key>Stand</key>
+            <value>Production</value>
+        </parameter>
+
 
 </environment>
