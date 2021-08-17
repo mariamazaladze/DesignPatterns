@@ -1,15 +1,20 @@
 package Utils;
 
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.testng.ScreenShooter;
 import io.qameta.allure.Step;
 
-import static com.codeborne.selenide.Configuration.startMaximized;
 import static com.codeborne.selenide.Selenide.open;
 
 public class ChromeAndWeb {
 
     @Step("open Chrome and link")
     public void openchrome() {
-        startMaximized = true;
+        Configuration.startMaximized = true;
+        Configuration.savePageSource=false;
+        Configuration.reportsFolder="src/main/resources/Reports";
+        ScreenShooter.captureSuccessfulTests = true;
+        Configuration.screenshots=true;
         open("https://demoqa.com/");
 
 

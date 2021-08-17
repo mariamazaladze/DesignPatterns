@@ -6,9 +6,12 @@ import Steps.StudentRegistrationMethods;
 import Steps.SubmitMethods;
 import Utils.ChromeAndWeb;
 import Variables.Variables;
+import com.codeborne.selenide.testng.ScreenShooter;
 import io.qameta.allure.*;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Epic("fierst Pom test")
+@Listeners({ ScreenShooter.class})
 public class PomTests {
     ChromeAndWeb open = new ChromeAndWeb();
     MainPageMethods main = new MainPageMethods();
@@ -17,8 +20,9 @@ public class PomTests {
     SubmitMethods afterSubmit = new SubmitMethods();
     Variables variables = new Variables();
 
+
     @Test(groups = {"groupstest1"}, description = "Student Registration Form name1")
-    @Epic("fierst Pom test")
+    @Flaky
     @Description("Student Registration Form name1")
     @Severity(SeverityLevel.BLOCKER)
     @Link(name = "allure configuration", type = "https://docs.qameta.io/allure/#_configuration")
@@ -37,6 +41,7 @@ public class PomTests {
     }
 
     @Test(groups = {"groupstest2"}, description = "Student Registration Form name2")
+    @Flaky
     @Story("Second pom test - it's story")
     @Description("Student Registration Form name2")
     @Severity(SeverityLevel.CRITICAL)
@@ -51,13 +56,16 @@ public class PomTests {
                 .setGender()
                 .scroll()
                 .setSubmit();
+
     }
 
     @Test(groups = {"groupstest1"}, description = "second test in this group", priority = 100)
+    @Flaky
     @Feature("Feature test")
     @Description("test for test ")
-    public void testThird() {
+    public void testThird()  {
         System.out.println("I love test Automation");
+
 
     }
 }
