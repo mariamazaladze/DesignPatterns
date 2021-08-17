@@ -20,7 +20,6 @@ public class PomTests {
     SubmitMethods afterSubmit = new SubmitMethods();
     Variables variables = new Variables();
 
-
     @Test(groups = {"groupstest1"}, description = "Student Registration Form name1")
     @Flaky
     @Description("Student Registration Form name1")

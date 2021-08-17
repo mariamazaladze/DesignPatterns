@@ -1,15 +1,24 @@
 [
   {
-    "name": "Assert error testes",
-    "traceRegex" : ".*AssertionError.*"
+    "name" : "skipped teses",
+    "matchedStatuses" : ["skipped"]
   },
+
   {
     "name" : "fail teses",
     "matchedStatuses" : ["failed"]
   },
   {
+    "name" : "broken tests",
+    "matchedStatuses" : ["broken"]
+  },
+  {
     "name": "successfully tests",
     "matchesStatuses": ["passed"],
     "messageRegex" : ".*successfully.* "
+  },
+  {
+    "name": "Assert error testes",
+    "traceRegex" : ".*AssertionError.*"
   }
 ]
