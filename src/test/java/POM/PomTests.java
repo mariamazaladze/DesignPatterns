@@ -6,10 +6,16 @@ import Steps.StudentRegistrationMethods;
 import Steps.SubmitMethods;
 import Utils.ChromeAndWeb;
 import Variables.Variables;
+import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
 import com.codeborne.selenide.testng.ScreenShooter;
 import io.qameta.allure.*;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import static com.codeborne.selenide.FileDownloadMode.HTTPGET;
+
 @Epic("fierst Pom test")
 @Listeners({ ScreenShooter.class})
 public class PomTests {
@@ -19,6 +25,17 @@ public class PomTests {
     StudentRegistrationMethods registration = new StudentRegistrationMethods();
     SubmitMethods afterSubmit = new SubmitMethods();
     Variables variables = new Variables();
+
+
+    public static String reportsFolder;
+    public void conf() {
+    Configuration.screenshots = true;
+    Configuration.fileDownload = HTTPGET;
+    reportsFolder = "C:\\Users\\mazaladze\\Desktop\\Mariam Azaladze\\IT ACADEMY\\DesignPatterns\\build\\reports\\tests";
+    SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+}
+
+
 
     @Test(groups = {"groupstest1"}, description = "Student Registration Form name1")
     @Flaky
