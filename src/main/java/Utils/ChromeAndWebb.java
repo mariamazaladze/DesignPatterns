@@ -6,7 +6,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.open;
 
-public class ChromeAndWeb {
+public class ChromeAndWebb {
 
     @Step("open Chrome and link")
     public void openchrome() {
@@ -19,6 +19,4 @@ public class ChromeAndWeb {
 
 
     }
-
-
 }

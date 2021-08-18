@@ -1,10 +1,10 @@
 package Steps;
 
-import PageObject.MainPageElements;
+import PageObject.MainPageElementss;
 import io.qameta.allure.Step;
 
 public class MainPageMethods {
-    MainPageElements form = new MainPageElements();
+    MainPageElementss form = new MainPageElementss();
 
 
   @Step("In main page : click forms button")

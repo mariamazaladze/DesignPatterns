@@ -1,12 +1,12 @@
 package Steps;
 
-import PageObject.LeftPannelElements;
+import PageObject.LeftPannelElementss;
 import io.qameta.allure.Step;
 
 
-public class LeftPannelMethods extends LeftPannelElements {
+public class LeftPannelMethods extends LeftPannelElementss {
 
-    LeftPannelElements leftMeniu = new LeftPannelElements();
+    LeftPannelElementss leftMeniu = new LeftPannelElementss();
 
     @Step("Left panel : click practiceform button")
     public void LeftPannelClick() {

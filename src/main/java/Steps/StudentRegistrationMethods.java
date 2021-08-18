@@ -1,10 +1,10 @@
 package Steps;
 
-import PageObject.StudentRegistrationElements;
+import PageObject.StudentRegistrationElementss;
 import io.qameta.allure.Step;
 
 public class StudentRegistrationMethods {
-    StudentRegistrationElements elements = new StudentRegistrationElements();
+    StudentRegistrationElementss elements = new StudentRegistrationElementss();
 
     @Step("Registration set {name}")
     public StudentRegistrationMethods setName(String name) {

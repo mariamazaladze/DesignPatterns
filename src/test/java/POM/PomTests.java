@@ -3,9 +3,9 @@ package POM;
 import Steps.LeftPannelMethods;
 import Steps.MainPageMethods;
 import Steps.StudentRegistrationMethods;
-import Steps.SubmitMethods;
-import Utils.ChromeAndWeb;
-import Variables.Variables;
+import Steps.SubmitMethodss;
+import Utils.ChromeAndWebb;
+import Variables.Variabless;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import com.codeborne.selenide.testng.ScreenShooter;
@@ -19,12 +19,12 @@ import static com.codeborne.selenide.FileDownloadMode.HTTPGET;
 @Epic("fierst Pom test")
 @Listeners({ ScreenShooter.class})
 public class PomTests {
-    ChromeAndWeb open = new ChromeAndWeb();
+    ChromeAndWebb open = new ChromeAndWebb();
     MainPageMethods main = new MainPageMethods();
     LeftPannelMethods left = new LeftPannelMethods();
     StudentRegistrationMethods registration = new StudentRegistrationMethods();
-    SubmitMethods afterSubmit = new SubmitMethods();
-    Variables variables = new Variables();
+    SubmitMethodss afterSubmit = new SubmitMethodss();
+    Variabless variables = new Variabless();
 
 
     public static String reportsFolder;

@@ -2,8 +2,7 @@ package Variables;
 
 import io.qameta.allure.Step;
 
-public class Variables {
-
+public class Variabless {
     private String name = "mariam";
     private String lastname = "azaladze";
     private String mobnumber = "0123456789";
@@ -41,6 +40,5 @@ public class Variables {
     public String getName2() {
         return name2;
     }
-
 
 }

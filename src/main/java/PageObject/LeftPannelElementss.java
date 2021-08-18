@@ -2,14 +2,10 @@ package PageObject;
 
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.selector.ByText;
-import org.openqa.selenium.support.FindBy;
 
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
 
-
-public class LeftPannelElements {
-
+public class LeftPannelElementss {
     public SelenideElement
             practiceForm = $(new ByText("Practice Form"));
-
 }
